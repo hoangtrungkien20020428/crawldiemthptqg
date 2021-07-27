@@ -2,7 +2,7 @@
 from bs4 import BeautifulSoup
 from urllib.request import Request, urlopen
 list_sbd=[[]]
-def wtf(matinh,start,end):
+def crowl(matinh,start,end):
      concac = 1
      while concac:
           x=matinh*10000+start
@@ -24,7 +24,7 @@ def wtf(matinh,start,end):
           if start>end:
                concac=0
  #bacnhinh ma tinh bang 19                      
-wtf(19,1,163)
+crowl(19,1,163)
 import csv
 with open('diemthinam2021_bacninh.csv','w',newline ='') as f:
      theweriter=csv.writer(f,delimiter=',',quoting=csv.QUOTE_ALL)
